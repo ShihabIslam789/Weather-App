@@ -14,4 +14,9 @@ function DisplayWeather(props) {
             <span className="cardtitle">
                 {data.name} , {data.sys.country}. Weather
             </span>
+            <span className="cardsubtitle">
+              As of {new Date().toLocaleTimeString()}
+            </span>
+
+            <h1>
 }
