@@ -7,4 +7,11 @@ function DisplayWeather(props) {
     `${data.cod !== 404 ? data.weather[0].icon : null}` +
     ".png";
     return {
+        <div className="displayweather">
+      {data.cod !== 404 ? (
+        <React.Fragment>
+          <div className="maincard">
+            <span className="cardtitle">
+                {data.name} , {data.sys.country}. Weather
+            </span>
 }
