@@ -37,5 +37,14 @@ function DisplayWeather(props) {
                         <tr>
                             <td>
                                 <h4>High/Low</h4>
+                                </td>
+                                <td>
+                                  <span>
+                                    {Math.floor(data.main.temp_max - 273.15)}/
+                                    {Math.floor(data.main.temp_min - 273.15)}
+                                    </span>
+                                    </td>
+                                    </tr>
+                                    <tr>
 
 }
