@@ -19,4 +19,9 @@ function DisplayWeather(props) {
             </span>
 
             <h1>
+              {" "}
+              {Math.floor(data.main.temp - 273.15)}
+              <sup>o</sup>
+              </h1>
+              
 }
