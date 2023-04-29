@@ -46,5 +46,21 @@ function DisplayWeather(props) {
                                     </td>
                                     </tr>
                                     <tr>
+                                      <td>
+                                        <h4>Humidity</h4>
+                                        </td>
+                                      </td>
+                                        <span>{data.main.humidity}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <h4> Pressure</h4>
+                                      </td>
+                                      <td>
+                                        <span>{data.main.pressure} hPa</span>
+                                      </td>
+                                    </tr>
+                                    </tr>
 
 }
