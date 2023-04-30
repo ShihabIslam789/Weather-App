@@ -62,5 +62,15 @@ function DisplayWeather(props) {
                                       </td>
                                     </tr>
                                     </tr>
+                                    <td>
+                    <h4>Visibility</h4>
+                  </td>
+                  <td>
+                    <span>{data.visibility / 1000} Km</span>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
 
 }
