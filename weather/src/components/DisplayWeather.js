@@ -73,4 +73,22 @@ function DisplayWeather(props) {
               </table>
             </div>
 
+            <div className="section2">
+              <table>
+                <tbody>
+                <tr>
+                  <td>
+                    <h4>Wind</h4>
+                  </td>
+                  <td>
+                  <span>{Math.floor((data.wind.speed * 18) / 5)} km/hr</span>
+                  </td>
+                  </tr>
+                <tr>
+                  <td>
+                    <h4>Wind Direction</h4>
+                  </td>
+                  <td>
+                    <span></span>
+
 }
