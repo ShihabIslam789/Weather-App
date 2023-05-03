@@ -99,5 +99,15 @@ function DisplayWeather(props) {
                   <td>
                     <span>
                       {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
+                      </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Sunset</h4>
+                  </td>
+                  <td>
+                    <span>
+                      {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
 
 }
