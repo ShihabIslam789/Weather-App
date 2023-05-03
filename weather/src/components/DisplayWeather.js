@@ -89,6 +89,15 @@ function DisplayWeather(props) {
                     <h4>Wind Direction</h4>
                   </td>
                   <td>
-                    <span></span>
+                    <span>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Sunrise</h4>
+                  </td>
+                  <td>
+                    <span>
+                      {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
 
 }
