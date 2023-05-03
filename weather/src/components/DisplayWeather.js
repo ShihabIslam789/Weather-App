@@ -109,5 +109,23 @@ function DisplayWeather(props) {
                   <td>
                     <span>
                       {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
+                      </span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </React.Fragment>
+      ) : (
+        <div className="maincard">
+          <h2>{data.message}</h2>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default DisplayWeather;
 
 }
