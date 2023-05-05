@@ -47,3 +47,11 @@ function Weather() {
           placeholder="city"
           name="city"
           onChange={(e) => handleChange(e)}
+          />
+          &nbsp; &nbsp; &nbsp;&nbsp;
+          <input
+            type="text"
+            placeholder="Country"
+            name="country"
+            onChange={(e) => handleChange(e)}
+          />
