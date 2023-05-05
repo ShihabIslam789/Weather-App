@@ -25,3 +25,14 @@ function Weather() {
       setWeather({ data: data });
     }
   }
+
+  const handleChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+
+    if (name === "city") {
+      setForm({ ...form, city: value });
+    }
+    if (name === "country") {
+      setForm({ ...form, country: value });
+    }
