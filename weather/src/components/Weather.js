@@ -36,3 +36,14 @@ function Weather() {
     if (name === "country") {
       setForm({ ...form, country: value });
     }
+  };
+  return (
+    <div className="weather">
+      <span className="title">Weather App</span>
+      <br />
+      <form>
+        <input
+          type="text"
+          placeholder="city"
+          name="city"
+          onChange={(e) => handleChange(e)}
