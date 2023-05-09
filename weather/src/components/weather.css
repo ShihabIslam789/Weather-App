@@ -1,0 +1,8 @@
+.weather {
+    margin: 2rem 0;
+    border: 3px dashed grey;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    width: max-content;
+    padding: 0px 20px 20px 20px;
+  }
