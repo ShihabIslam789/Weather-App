@@ -21,3 +21,17 @@
     left: 10px;
     font-size: 1.5rem;
   }
+
+  .displayweather .maincard .cardsubtitle {
+    position: absolute;
+    left: 10px;
+  
+    color: grey;
+    margin-top: -8px;
+  }
+  .displayweather h1 {
+    font-size: 5rem;
+    margin: -10px;
+    margin-left: -150px;
+  }
+  
