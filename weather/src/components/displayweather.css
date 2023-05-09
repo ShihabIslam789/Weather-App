@@ -35,3 +35,24 @@
     margin-left: -150px;
   }
   
+  .displayweather .weather-icon {
+    width: 100px;
+  
+    position: absolute;
+    top: 50px;
+  }
+  
+  .displayweather .weather-main {
+    position: absolute;
+  
+    top: 120px;
+    left: 310px;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  
+  .displayweather .weather-description {
+    position: absolute;
+    left: 10px;
+    font-size: 1.4rem;
+  }
