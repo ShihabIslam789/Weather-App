@@ -3,3 +3,21 @@
     display: flex;
     flex-flow: column nowrap;
   }
+
+  .displayweather .maincard {
+    width: 500px;
+    margin-top: 20px;
+    align-self: center;
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    background: rgb(245, 242, 242);
+    border: 1px solid black;
+  }
+
+  .displayweather .maincard .cardtitle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+  }
