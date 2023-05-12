@@ -42,3 +42,7 @@
   background: transparent;
   color: black;
 }
+
+.weather .getweather:focus {
+  outline: none;
+}
