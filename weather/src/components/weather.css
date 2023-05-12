@@ -37,3 +37,8 @@
   cursor: pointer;
   color: whitesmoke;
 }
+
+.weather .getweather:hover {
+  background: transparent;
+  color: black;
+}
