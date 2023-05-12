@@ -1,18 +1,18 @@
-import React from "react"
-import "./displayweather.css"
+import React from "react";
+import "./displayweather.css";
 function DisplayWeather(props) {
-    const { data } = props;
-    const iconurl =
+  const { data } = props;
+  const iconurl =
     "http://openweathermap.org/img/wn/" +
     `${data.cod !== 404 ? data.weather[0].icon : null}` +
     ".png";
-    return {
-        <div className="displayweather">
+  return (
+    <div className="displayweather">
       {data.cod !== 404 ? (
         <React.Fragment>
           <div className="maincard">
             <span className="cardtitle">
-                {data.name} , {data.sys.country}. Weather
+              {data.name} , {data.sys.country}. Weather
             </span>
             <span className="cardsubtitle">
               As of {new Date().toLocaleTimeString()}
@@ -22,47 +22,47 @@ function DisplayWeather(props) {
               {" "}
               {Math.floor(data.main.temp - 273.15)}
               <sup>o</sup>
-              </h1>
-              <span className = "weather-main">{data.weather[0].main}</span>
-              <img className="weather-icon"src={iconurl} alt=""srcSet="" />
-              <span className="weather-description">
-                  {" "}
-                  {data.weather[0].description}
-                  </span>
-                </div>
-                <div className="weatherdetails">
-                  <div className= "section1">
-                      <table>
-                      <tbody>
-                        <tr>
-                            <td>
-                                <h4>High/Low</h4>
-                                </td>
-                                <td>
-                                  <span>
-                                    {Math.floor(data.main.temp_max - 273.15)}/
-                                    {Math.floor(data.main.temp_min - 273.15)}
-                                    </span>
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <h4>Humidity</h4>
-                                        </td>
-                                      </td>
-                                        <span>{data.main.humidity}</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <h4> Pressure</h4>
-                                      </td>
-                                      <td>
-                                        <span>{data.main.pressure} hPa</span>
-                                      </td>
-                                    </tr>
-                                    </tr>
-                                    <td>
+            </h1>
+            <span className="weather-main">{data.weather[0].main}</span>
+            <img className="weather-icon" src={iconurl} alt="" srcSet="" />
+            <span className="weather-description">
+              {" "}
+              {data.weather[0].description}
+            </span>
+          </div>
+          <div className="weatherdetails">
+            <div className="section1">
+              <table>
+              <tbody>
+              <tr>
+                  <td>
+                    <h4>High/Low</h4>
+                  </td>
+                  <td>
+                    <span>
+                      {Math.floor(data.main.temp_max - 273.15)}/
+                      {Math.floor(data.main.temp_min - 273.15)}
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Humidity</h4>
+                  </td>
+                  <td>
+                    <span>{data.main.humidity} %</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Pressure</h4>
+                  </td>
+                  <td>
+                    <span>{data.main.pressure} hPa</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     <h4>Visibility</h4>
                   </td>
                   <td>
@@ -81,16 +81,19 @@ function DisplayWeather(props) {
                     <h4>Wind</h4>
                   </td>
                   <td>
-                  <span>{Math.floor((data.wind.speed * 18) / 5)} km/hr</span>
+                    <span>{Math.floor((data.wind.speed * 18) / 5)} km/hr</span>
                   </td>
-                  </tr>
+                </tr>
                 <tr>
                   <td>
                     <h4>Wind Direction</h4>
                   </td>
                   <td>
                     <span>
-                    </td>
+                      {data.wind.deg}
+                      <sup>o</sup> deg
+                    </span>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -99,7 +102,7 @@ function DisplayWeather(props) {
                   <td>
                     <span>
                       {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
-                      </span>
+                    </span>
                   </td>
                 </tr>
                 <tr>
@@ -109,7 +112,7 @@ function DisplayWeather(props) {
                   <td>
                     <span>
                       {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
-                      </span>
+                    </span>
                   </td>
                 </tr>
                 </tbody>
@@ -127,5 +130,3 @@ function DisplayWeather(props) {
 }
 
 export default DisplayWeather;
-
-}
