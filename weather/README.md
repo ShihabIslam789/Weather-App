@@ -1,3 +1,12 @@
+![image](https://i.gyazo.com/88f16622581be332aa26d4a5115469ef.png)
+
+#### Install
+
+Clone git repo: 'https://github.com/ShihabIslam789/Weather-App.git'
+Install: 'npm install'
+Local start: 'npm start'
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
