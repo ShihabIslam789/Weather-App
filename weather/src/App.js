@@ -46,3 +46,13 @@ export default class App extends React.Component{
                 style={{backgroundColor: this.state.color}}>
       {_.isEmpty(this.state.weekWeather) ? "no data" :
         <WeekWeather color={this.state.color}
+        weekWeather={this.state.weekWeather} />}
+        {this._renderForm()}
+        <blockquote className="blockquote blockquote-centered">
+          <p>
+            Created by
+            <a href="http://twitter.com/mironcatalin"> @mironcatalin</a>
+          </p>
+        </blockquote>
+      </div>;
+    }
