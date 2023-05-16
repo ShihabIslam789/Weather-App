@@ -71,3 +71,19 @@ export default class App extends React.Component{
         </form>
       );
     }
+
+    handleSubmit(e) {
+      e.preventDefault();
+  
+      const searchedCity = this.refs.locationName.getDOMNode().value;
+  
+      if (searchedCity === this.state.city) {
+        return;
+      }
+  
+      this.getWeather(searchedCity);
+    }
+  };
+  
+  
+  React.render(<App />, document.body);
