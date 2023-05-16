@@ -16,3 +16,23 @@ export default class weatherItem extends React.Component {
             weatherType = weather.dayWeather.weather[0].description,
             weatherDescription = weather.dayWeather.weather[0].main,
             icon = weather.dayWeather.weather[0].id;
+
+        
+            return <div className={"weather-item " + this.props.theme}>
+            <p className="location">
+              <span className="city">{city}</span>
+              <span className="country">{country ? `, ${country}` : null}</span>
+            </p>
+            <Skycons color="white" icon={getIcon(icon)} />
+            {this._renderDayName()}
+            <div className="temperature-info">
+              <p className="temperature">
+                <NumberEasing value={Math.round(temperature)}
+                              speed={1200}
+                              ease='circInOut'/>
+                °C
+              </p>
+              <p className="info">{weatherType}</p>
+            </div>
+          </div>
+        }
