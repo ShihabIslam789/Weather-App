@@ -35,3 +35,45 @@ body {
     }
   }
 }
+
+
+.weather-container {
+  transition: background .4s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+
+  .blockquote {
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+}
+
+$font-size = 132px;
+$small-font-size = 24;
+
+.weather-item {
+  height: 100%;
+  text-align: center;
+  color: white;
+  position: relative;
+
+  .location {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1em;
+    margin: 32px 0 .5em 0;
+
+    .city {}
+    .country {}
+  }
