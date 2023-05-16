@@ -2,9 +2,9 @@
 
 #### Install
 
-Clone git repo: 'https://github.com/ShihabIslam789/Weather-App.git'
-Install: 'npm install'
-Local start: 'npm start'
+Clone git repo: 'https://github.com/ShihabIslam789/Weather-App.git' <br>
+Install: 'npm install' <br>
+Local start: 'npm start' <br>
 
 
 # Getting Started with Create React App
