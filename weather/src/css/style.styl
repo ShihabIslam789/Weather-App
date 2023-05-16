@@ -125,4 +125,66 @@ $small-font-size = 24;
     aling-items: flex-start;
     justify-content: flex-start;
 
+    .info,
+    .location {
+      display: none;
+    }
+
+    .timestamp {
+      order: 1;
+      display: flex;
+      flex: 1;
+      align-self: center;
+      margin-top: 32px;
+      font-size: 32px;
+    }
+
+    .temperature-info {
+      display: flex;
+      flex: 2;
+      align-self: center;
+      order: 3;
+    }
+
+    .temperature {
+      font-size: 32px;
+    }
+
+    canvas {
+      width: 100%;
+      margin-bottom: 10px;
+      order: 2;
+      align-self: center;
+    }
+  }
+}
+
     
+.week-container {
+  height: 75vh;
+  overflow: hidden;
+  margin: 0;
+
+  .week-current-day {
+    height: 100%;
+    float: left;
+    width: 30%;
+    overflow: hidden;
+  }
+  .week-all-days {
+    overflow: hidden;
+    width: 70%;
+    float: left;
+    height: 100%;
+
+    .week-one-day {
+      transition: background .4s ease-in-out;
+      display: flex;
+      flex-direction: row;
+
+      float: left;
+      width: calc(100% / 7);
+      height: 100%;
+    }
+  }
+}
