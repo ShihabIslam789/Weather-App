@@ -21,3 +21,14 @@ export default class App extends React.Component{
   componentWillMount() {
     this.getWeather();
   }
+
+  getWeather(searchedCity = this.state.city) {
+    fetchWeather(searchedCity)
+      .then((response) => {
+        var weather = _.map(response.list, (dayWeather) => {
+          return {
+            dayWeather,
+            country: response.city.country,
+            city: response.city.name
+          }
+        });
