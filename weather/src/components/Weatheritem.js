@@ -36,3 +36,18 @@ export default class weatherItem extends React.Component {
             </div>
           </div>
         }
+
+        _renderDayName() {
+            let days = {
+              sameDay: "[Today]",
+              nextDay: "ddd",
+              nextWeek: "ddd",
+              lastDay: "ddd",
+              lastWeek: "ddd"
+            }
+        
+            return <p className="timestamp">
+              {Moment(this.props.data.dayWeather.dt * 1000).calendar(null, days)}
+            </p>
+          }
+        }
