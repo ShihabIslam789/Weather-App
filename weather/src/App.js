@@ -56,3 +56,18 @@ export default class App extends React.Component{
         </blockquote>
       </div>;
     }
+
+
+    _renderForm() {
+      return (
+        <form onSubmit={(e) => this.handleSubmit(e)}>
+          <fieldset>
+            <legend>Enter your city</legend>
+            <input className="form-input"
+                   ref="locationName"
+                   type="text"
+                   defaultValue={this.state.searchedCity}/>
+          </fieldset>
+        </form>
+      );
+    }
