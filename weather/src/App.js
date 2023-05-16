@@ -32,3 +32,17 @@ export default class App extends React.Component{
             city: response.city.name
           }
         });
+
+        this.setState({
+          weekWeather: weather,
+          city: this.state.searchedCity,
+          color: randomColor({luminosity: "dark", format: "hex"})
+        });
+      })
+  }
+
+  render() {
+    return <div className="weather-container"
+                style={{backgroundColor: this.state.color}}>
+      {_.isEmpty(this.state.weekWeather) ? "no data" :
+        <WeekWeather color={this.state.color}
